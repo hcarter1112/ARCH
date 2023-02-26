@@ -16,10 +16,10 @@ useradd -m -G wheel ralldi &&
 echo "User ralldi added..."
 echo "please add a password"
 passwd ralldi &&
-./install-pkgs-native.sh &&
-cp sudoers /etc/ &&
+#./install-pkgs-native.sh &&
+mv sudoers /etc/ &&
 cp mkinitcpio.conf /etc/ &&
-cp grub /etc/default/ &&
+mv grub /etc/default/ &&
 mkinitcpio -P &&
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARX &&
 grub-mkconfig -o /boot/grub/grub.cfg
