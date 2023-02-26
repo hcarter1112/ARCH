@@ -1,15 +1,9 @@
 archiso
-#arcolinux-keyring
-#arcolinux-mirrorlist-git
-#arcolinux-spices-git
 base
 base-devel
 bat
-#betterlockscreen
 bridge-utils
 btrfs-progs
-#chaotic-keyring
-#chaotic-mirrorlist
 chrony
 connman
 copyq
@@ -38,7 +32,6 @@ iptables-nft
 kitty
 kvantum
 libguestfs
-#librewolf-bin
 lightdm
 lightdm-gtk-greeter
 linux
@@ -78,7 +71,6 @@ sxhkd
 thunar
 thunar-volman
 ttf-joypixels
-#tty-clock-git
 v4l2loopback-dkms
 v4l2loopback-utils
 vde2
@@ -142,5 +134,3 @@ xorg-xwud
 xsel
 xss-lock
 xterm
-#yay-git
-#zoom
