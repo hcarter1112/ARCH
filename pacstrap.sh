@@ -2,6 +2,6 @@
 
 pacstrap /mnt < pkglist-pacstrap.txt &&
 genfstab -U /mnt > /mnt/etc/fstab &&
-cp -r . /mnt/ &&
+cp . /mnt/ &&
 arch-chroot /mnt 
 

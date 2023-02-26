@@ -16,6 +16,7 @@ useradd -m -G wheel ralldi &&
 echo "User ralldi added..."
 echo "please add a password"
 passwd ralldi &&
+./install-pkgs-native.sh &&
 cp sudoers /etc/ &&
 cp mkinitcpio.conf /etc/ &&
 cp grub /etc/default/ &&
