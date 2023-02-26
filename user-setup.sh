@@ -17,9 +17,9 @@ echo "User ralldi added..."
 echo "please add a password"
 passwd ralldi &&
 #./install-pkgs-native.sh &&
-mv sudoers /etc/ &&
+cp sudoers /etc/ &&
 cp mkinitcpio.conf /etc/ &&
-mv grub /etc/default/ &&
+cp grub /etc/default/ &&
 mkinitcpio -P &&
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARX &&
 grub-mkconfig -o /boot/grub/grub.cfg
