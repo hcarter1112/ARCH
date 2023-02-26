@@ -11,12 +11,12 @@ echo "$hostname" > /etc/hostname &&
 passwd &&
 cd /etc/skel &&
 mkdir Downloads Documents Videos Pictures .config .gitstuff &&
-cd ~ &&
 useradd -m -G wheel ralldi &&
 echo "User ralldi added..."
 echo "please add a password"
 passwd ralldi &&
 #./install-pkgs-native.sh &&
+cd / &&
 cp sudoers /etc/ &&
 cp mkinitcpio.conf /etc/ &&
 cp grub /etc/default/ &&

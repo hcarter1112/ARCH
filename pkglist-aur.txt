@@ -1,3 +1,7 @@
+betterlockscreen
+librewolf-bin
+zoom
+tty-clock-git
 ferdium
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
