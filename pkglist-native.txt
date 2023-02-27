@@ -27,8 +27,6 @@ gtk-engine-murrine
 gtk2+extra
 gvfs
 htop
-intel-ucode
-iptables-nft
 kitty
 kvantum
 libguestfs
@@ -48,6 +46,7 @@ network-manager-applet
 networkmanager
 nitrogen
 nodejs-emojione
+noto-fonts
 obs-studio
 openbsd-netcat
 picom
@@ -81,6 +80,7 @@ wget
 wireplumber
 xclip
 xcursor-comix
+xdg-desktop-portal-gtk
 xdotool
 xf86-video-vesa
 xorg-bdftopcf
