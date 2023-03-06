@@ -29,6 +29,7 @@ gvfs
 htop
 kitty
 kvantum
+lf
 libguestfs
 lightdm
 lightdm-gtk-greeter
@@ -69,6 +70,7 @@ rustup
 sxhkd
 thunar
 thunar-volman
+trash-cli
 ttf-joypixels
 v4l2loopback-dkms
 v4l2loopback-utils
