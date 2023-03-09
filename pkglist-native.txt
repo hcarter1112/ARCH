@@ -13,6 +13,7 @@ dmidecode
 dnsmasq
 dunst
 efibootmgr
+evolution
 exa
 fd
 feh
@@ -29,6 +30,7 @@ gvfs
 htop
 kitty
 kvantum
+lazygit
 lf
 libguestfs
 lightdm
@@ -64,6 +66,7 @@ qtile
 ranger
 rclone
 reflector
+ripgrep
 rofi-calc
 rofi-emoji
 rustup
