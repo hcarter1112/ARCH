@@ -33,10 +33,10 @@ while [ $confirm -eq -1 ]; do
 		echo "2) Intel"
 		read cpu
 		if [ $cpu -eq 1 ]; then
-			cpu-readout="AMD CPU"
+			cpuReadout="AMD CPU"
 			exit_code=0
 		elif [ $cpu -eq 2 ]; then
-			cpu-readout="INTEL CPU"
+			cpuReadout="INTEL CPU"
 			exit_code=0
 		else
 			echo $error
@@ -52,13 +52,13 @@ while [ $confirm -eq -1 ]; do
 		echo "2) NVIDIA (PROPRIETARY DRIVERS)"
 		read gpu
 		if [ $gpu -eq 1 ]; then
-			gpu-readout="AMD GPU"
+			gpuReadout="AMD GPU"
 			exit_code=0
 		elif [ $gpu -eq 2 ]; then
-			gpu-readout="NVIDIA CPU"
+			gpuReadout="NVIDIA CPU"
 			exit_code=0
 		elif [ $gpu -eq 0 ]; then
-			gpu-readout="NO GPU DRIVERS"
+			gpuReadout="NO GPU DRIVERS"
 			exit_code=0
 		else
 			echo $error
@@ -71,12 +71,12 @@ while [ $confirm -eq -1 ]; do
 		echo "Would you like to install steam, lutris, and wine dependencies?"
 		echo "1) Yes"
 		echo "2) No"
-		read game-stuff
-		if [ $game-stuff -eq 1 ]; then
-			game-stuff-readout="WILL install gaming and wine packages"
+		read gameStuff
+		if [ $gameStuff -eq 1 ]; then
+			gameStuffReadout="WILL install gaming and wine packages"
 			exit_code=0
 		elif [ $gpu -eq 2 ]; then
-			game-stuff-readout="WILL NOT install gaming and wine packages"
+			gameStuffReadout="WILL NOT install gaming and wine packages"
 			exit_code=0
 		else
 			echo $error
@@ -91,10 +91,10 @@ while [ $confirm -eq -1 ]; do
 		echo "2) No"
 		read printing
 		if [ $printing -eq 1 ]; then
-			printing-readout="WILL install printing and scanning utilities"
+			printingReadout="WILL install printing and scanning utilities"
 			exit_code=0
 		elif [ $gpu -eq 2 ]; then
-			printing-readout="WILL NOT install printing and scanning utilities"
+			printingReadout="WILL NOT install printing and scanning utilities"
 			exit_code=0
 		else
 			echo $error
@@ -103,10 +103,10 @@ while [ $confirm -eq -1 ]; do
 	## Read out section where you can see your selected options and decide
 	## if you would like to reselect
 	echo "These are the options that you have selected"
-	echo "    - $cpu-readout"
-	echo "    - $gpu-readout"
-	echo "    - $game-stuff-readout"
-	echo "    - $printing-readout"
+	echo "    - $cpuReadout"
+	echo "    - $gpuReadout"
+	echo "    - $gameStuffReadout"
+	echo "    - $printingReadout"
 	echo " "
 	echo "Are these your desired options?"
 	echo "1) Yes"

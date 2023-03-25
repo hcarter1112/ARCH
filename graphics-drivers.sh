@@ -47,7 +47,7 @@ echo "               Driver installation complete            "
 echo "#######################################################"
 
 
-if [ $game-stuff -eq 1 ]; then
+if [ $gameStuff -eq 1 ]; then
 	echo "#######################################################"
 	echo "               Installing Game related software             "
 	echo "#######################################################"
@@ -60,7 +60,7 @@ if [ $game-stuff -eq 1 ]; then
 	echo "#######################################################"
 	echo "              Game related software Installed...            "
 	echo "#######################################################"
-elif [ $game-stuff -eq 2 ]; then
+elif [ $gameStuff -eq 2 ]; then
 	echo "#######################################################"
 	echo "            NOT INSTALLING STEAM AND LUTRIS            "
 	echo "#######################################################"
