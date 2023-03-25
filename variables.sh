@@ -122,3 +122,7 @@ while [ $confirm -eq -1 ]; do
 		echo $error
 	fi
 done
+export printing
+export gpu
+export cpu
+export gameStuff

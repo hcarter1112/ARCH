@@ -1,5 +1,4 @@
 #!/bin/bash
-source /ARCH/variables.sh  
 ## Installation section
 echo "#######################################################"
 echo "               Installing cpu and gpu drivers             "
