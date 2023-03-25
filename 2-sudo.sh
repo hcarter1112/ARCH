@@ -1,7 +1,6 @@
 #!/bin/bash
 ./variables.sh &&
 	./user-setup.sh &&
-	./aur-setup.sh &&
 	./graphics-drivers.sh &&
 	./install-pkgs-native.sh &&
 	./change-shell.sh &&

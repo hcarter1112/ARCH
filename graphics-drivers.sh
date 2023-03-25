@@ -67,30 +67,3 @@ elif [ $gameStuff -eq 2 ]; then
 else
 	echo "Please enter a valid number"
 fi
-
-if [ $printing -eq 1 ]; then
-	echo "#######################################################"
-	echo "               Installing Cups and SANE                "
-	echo "#######################################################"
-	pikaur -S sane \
-		sane-airscan \
-		system-config-printer \
-		epson-inkjet-printer-escpr \
-		epson-inkjet-printer-escpr2 \
-		iscan-plugin-networkcups \
-		cups-pdf \
-		cups-filters \
-		gutenprint \
-		simple-scan \
-		foomatic-db-gutenprint-ppds &&
-	echo "#######################################################"
-	echo "              Printer and scanner stuff installed      "
-	echo "#######################################################"
-elif [ $printing -eq 2 ]; then
-	echo "#######################################################"
-	echo "            NOT INSTALLING PRINTER SCANNER STUFF            "
-	echo "#######################################################"
-else
-	echo "Please enter a valid number"
-fi
-
