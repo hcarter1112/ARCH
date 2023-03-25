@@ -3,23 +3,22 @@
 echo "#######################################################"
 echo "               Installing cpu and gpu drivers             "
 echo "#######################################################"
-if [[ $cpu -eq 1 ]]; then
+if [ $cpu -eq 1 ]; then
 	echo "You have selected AMD..."
 	echo "Installing AMD cpu drivers..." &&
-		pacman -S amd-ucode &&
-elif [[ $cpu -eq 2 ]]; then
+		pacman -S amd-ucode
+elif [ $cpu -eq 2 ]; then
 	echo "You have selected Intel..."
 	echo "Installing Intel cpu ucode..." &&
-		pacman -S intel-ucode &&
+		pacman -S intel-ucode
 else
 	echo "Please enter a valid option"
 fi
 
-
-if [[ $gpu -eq 0 ]]; then
+if [ $gpu -eq 0 ]; then
 	echo "You have selected NO GPU..."
 	echo "no graphics dirvers to install... skipping..."
-elif [[ $gpu -eq 1 ]]; then
+elif [ $gpu -eq 1 ]; then
 	echo "You have selected AMD..."
 	echo "Installing AMD gpu drivers..." &&
 		pacman -S xf86-video-amdgpu \
@@ -27,8 +26,8 @@ elif [[ $gpu -eq 1 ]]; then
 			vulkan-radeon \
 			lib32-vulkan-radeon \
 			vulkan-icd-loader \
-			lib32-vulkan-icd-loader 
-elif [[ $gpu -eq 2 ]]; then
+			lib32-vulkan-icd-loader
+elif [ $gpu -eq 2 ]; then
 	echo "You have selected NVIDIA PROPRIETARY DRIVERS..."
 	echo "Installing NVIDIA PROPRIETARY DRIVERS AND UTILITIES..." &&
 		pacman -S nvidia-dkms \
@@ -36,7 +35,7 @@ elif [[ $gpu -eq 2 ]]; then
 			lib32-nvidia-utils \
 			nvidia-settings \
 			vulkan-icd-loader \
-			lib32-vulkan-icd-loader 
+			lib32-vulkan-icd-loader
 else
 	echo "Please enter a valid option"
 fi
@@ -44,7 +43,6 @@ fi
 echo "#######################################################"
 echo "               Driver installation complete            "
 echo "#######################################################"
-
 
 if [ $gameStuff -eq 1 ]; then
 	echo "#######################################################"
@@ -56,7 +54,7 @@ if [ $gameStuff -eq 1 ]; then
 		sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama \
 		ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 \
 		lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader steam lutris &&
-	echo "#######################################################"
+		echo "#######################################################"
 	echo "              Game related software Installed...            "
 	echo "#######################################################"
 elif [ $gameStuff -eq 2 ]; then

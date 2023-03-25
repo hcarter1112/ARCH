@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-source /ARCH/variables.sh &&
-	chsh -s /usr/bin/fish &&
+chsh -s /usr/bin/fish &&
 	rustup default stable &&
 	pikaur -S \
 		betterlockscreen \
