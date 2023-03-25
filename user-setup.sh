@@ -21,7 +21,7 @@ cd /ARCH &&
 	if [ -f /etc/pacman.conf ]; then
 		mv /etc/pacman.conf /etc/pacman.conf.bak
 	fi
-cp pacman.conf /etc/pacman.conf &&
+cp /ARCH/pacman.conf /etc/pacman.conf &&
 
 	## mkinitcpio and install grub to the system
 	mkinitcpio -P &&
