@@ -4,7 +4,6 @@ chsh -s /usr/bin/fish &&
 	rustup default stable &&
 	pikaur -S \
 		betterlockscreen \
-		librewolf-bin \
 		zoom \
 		tty-clock-git \
 		ferdium \
@@ -16,8 +15,11 @@ chsh -s /usr/bin/fish &&
 		gtk-theme-arc-gruvbox-git \
 		ncspot-git \
 		xcursor-comix-opaque \
+		xpadneo-dkms-git \
+		input-remapper-git \
 		zhumu \
 		dragon-drop-git &&
+	yay -S librewolf-bin &&
 	if [ $printing -eq 1 ]; then
 		echo "#######################################################"
 		echo "               Installing Cups and SANE                "
